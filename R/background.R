@@ -97,8 +97,7 @@ rcmdcheck_process <- R6Class(
     },
 
     kill = function(...) {
-      private$killed <- TRUE
-      super$kill(...)
+      private$killed <- super$kill(...)
     }
 
   ),
